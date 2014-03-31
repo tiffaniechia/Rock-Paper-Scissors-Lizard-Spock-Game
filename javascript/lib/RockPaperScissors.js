@@ -14,11 +14,11 @@ function Game(player1, player2) {
 
 
   var pairs = {
-    'rock': ['scissors', 'lizard'],
-    'scissors': ['paper', 'lizard'],
-    'paper': ['rock', 'spock'],
-    'lizard': ['paper', 'spock'],
-    'spock': ['rock', 'scissors']
+    'rock': ['crushes','scissors', 'crushes', 'lizard'],
+    'scissors': ['cut', 'paper','decapitate', 'lizard'],
+    'paper': ['covers','rock', 'disproves','spock'],
+    'lizard': ['eats','paper', 'poisons','spock'],
+    'spock': ['vaporizes','rock', 'smashes','scissors']
   };
 
   // original rockpaperscissors
@@ -47,7 +47,16 @@ Game.prototype.winner = function() {
 };
 
 
-
 Game.prototype.message = function() {
   return(this.win.name  +" beats " + this.lose.name)
+};
+
+
+Game.prototype.playmessage = function() {
+
+  var index = pairs[this.win.pick].indexOf(this.lose.pick)
+  var indexoneless = (pairs[this.win.pick].indexOf(this.lose.pick)) -1 
+
+  return (this.win.pick + " "+(pairs[this.win.pick].slice(indexoneless, index)) +" " + this.lose.pick)
+
 };

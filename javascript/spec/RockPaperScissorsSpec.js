@@ -18,7 +18,8 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('rock');
         player2.picks('scissors');
         expect(game.winner()).toBe(player1);
-        expect(game.message()).toBe('Mario beats Alex');
+        expect(game.message()).toBe('Mario beats Alex')
+        expect(game.playmessage()).toBe('rock crushes scissors')
 
       });
 
