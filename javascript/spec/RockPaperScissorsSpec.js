@@ -18,6 +18,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('rock');
         player2.picks('scissors');
         expect(game.winner()).toBe(player1);
+        expect(game.message()).toBe('Mario beats Alex');
 
       });
 
@@ -26,6 +27,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('rock');
         player2.picks('lizard');
         expect(game.winner()).toBe(player1);
+        expect(game.message()).toBe('Mario beats Alex')
 
       });
 
@@ -54,7 +56,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('paper');
         player2.picks('rock');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
 
@@ -63,7 +65,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('paper');
         player2.picks('spock');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
       it('should lose to scissors', function() {
@@ -91,7 +93,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('scissors');
         player2.picks('paper');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
       it('should beat lizard', function() {
@@ -99,7 +101,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('scissors');
         player2.picks('lizard');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
       it('should lose to rock', function() {
@@ -107,7 +109,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('scissors');
         player2.picks('rock');
         expect(game.winner()).toBe(player2);
-
+        expect(game.message()).toBe('Alex beats Mario')
       });
 
       it('should lose to spock', function() {
@@ -115,7 +117,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('scissors');
         player2.picks('spock');
         expect(game.winner()).toBe(player2);
-
+        expect(game.message()).toBe('Alex beats Mario')
       });
 
     });
@@ -128,7 +130,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('lizard');
         player2.picks('paper');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
       it('should beat spock', function() {
@@ -136,7 +138,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('lizard');
         player2.picks('spock');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
       it('should lose to scissors', function() {
@@ -144,7 +146,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('lizard');
         player2.picks('scissors');
         expect(game.winner()).toBe(player2);
-
+        expect(game.message()).toBe('Alex beats Mario')
       });
 
       it('should lose to rock', function() {
@@ -152,7 +154,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('lizard');
         player2.picks('rock');
         expect(game.winner()).toBe(player2);
-
+        expect(game.message()).toBe('Alex beats Mario')
       });
 
     });
@@ -164,7 +166,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('spock');
         player2.picks('rock');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
       it('should beat scissors', function() {
@@ -172,7 +174,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('spock');
         player2.picks('scissors');
         expect(game.winner()).toBe(player1);
-
+        expect(game.message()).toBe('Mario beats Alex')
       });
 
       it('should lose to paper', function() {
@@ -180,7 +182,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('spock');
         player2.picks('paper');
         expect(game.winner()).toBe(player2);
-
+        expect(game.message()).toBe('Alex beats Mario')
       });
 
       it('should lose to lizard', function() {
@@ -188,7 +190,7 @@ describe("Rock-Paper-Scissors", function() {
         player1.picks('spock');
         player2.picks('lizard');
         expect(game.winner()).toBe(player2);
-
+        expect(game.message()).toBe('Alex beats Mario')
       });
 
     });

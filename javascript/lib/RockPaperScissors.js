@@ -12,7 +12,6 @@ function Game(player1, player2) {
   this.player2 = player2;
 }
 
-Game.prototype.winner = function() {
 
   var pairs = {
     'rock': ['scissors', 'lizard'],
@@ -27,7 +26,11 @@ Game.prototype.winner = function() {
   //   return this.player1
   // }
 
+Game.prototype.winner = function() {
+
   if (pairs[this.player1.pick].indexOf(this.player2.pick) > -1 ) {
+    this.win= this.player1
+    this.lose = this.player2
     return this.player1
   }
 
@@ -36,7 +39,15 @@ Game.prototype.winner = function() {
   }
 
   else {
+    this.win= this.player2
+    this.lose = this.player1
     return this.player2
   }
 
+};
+
+
+
+Game.prototype.message = function() {
+  return(this.win.name  +" beats " + this.lose.name)
 };
