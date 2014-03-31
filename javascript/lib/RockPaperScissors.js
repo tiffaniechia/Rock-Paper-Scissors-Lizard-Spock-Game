@@ -54,9 +54,8 @@ Game.prototype.message = function() {
 
 Game.prototype.playmessage = function() {
 
-  var index = pairs[this.win.pick].indexOf(this.lose.pick)
-  var indexoneless = (pairs[this.win.pick].indexOf(this.lose.pick)) -1 
+  var verbIndex = pairs[this.win.pick].indexOf(this.lose.pick) - 1; 
 
-  return (this.win.pick + " "+(pairs[this.win.pick].slice(indexoneless, index)) +" " + this.lose.pick)
+  return (this.win.pick + " "+(pairs[this.win.pick][verbIndex]) +" " + this.lose.pick)
 
 };
