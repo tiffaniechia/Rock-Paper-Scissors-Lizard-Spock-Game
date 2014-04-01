@@ -8,7 +8,9 @@
   </head>
 
   <body>
-    <h1>ROCK PAPER SCISSORS LIZARD SPOCK</h1>
+    <h1>ROCK PAPER SCISSORS LIZARD SPOCK AND THE ALMIGH-T</h1>
+    
+    <h2>Pick a move against the computer!</h2>
     <div class='choices'>
       <img src="images/rock.png" data-pick="rock">
       <img src="images/paper.png" data-pick="paper">
@@ -16,14 +18,15 @@
       <img src="images/lizard.png" data-pick="lizard">
       <img src="images/spock.png" data-pick="spock">
       <img src="images/tiffanie.png" data-pick="tiffanie">
+     
     </div>
 
-    <ul id="results"></ul>
+    <h4 id="results"></h4>
 
     <script src='lib/RockPaperScissors.js'></script>
     <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script> 
 
-    <script>
+  <script> 
     $(document).ready(function(){
       var p1 = new Player ('Human');
       var p2 = new Player ('Computer');
