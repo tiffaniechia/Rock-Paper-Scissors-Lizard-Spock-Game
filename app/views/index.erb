@@ -19,10 +19,11 @@
       <img src="/images/lizard.png" data-pick="lizard">
       <img src="/images/spock.png" data-pick="spock">
       <img src="/images/tiffanie.png" data-pick="tiffanie">
-     
     </div>
 
-    <UL id="results"></UL>
+    <div id="playerresults"> </div>
+
+    <ul id="results"></ul>
 
     <script src='/javascript/lib/RockPaperScissors.js'></script>
     <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script> 
@@ -33,11 +34,13 @@
       var p2 = new Player ('Computer');
       var game = new Game(p1, p2);
 
+
+
       $('.choices img').on('click', function(){
         p1.picks($(this).data('pick'));
         p2.computerrandom();
         game.winner();
-        // $('#results').html(game.playmessage());
+        $('#playerresults').html(game.message());
         var latestresult = $('<li>' + game.playmessage() + '</li>');
        latestresult.prependTo('#results').hide().slideDown();
        $('#results li:nth-child(6)').fadeOut(function(){
