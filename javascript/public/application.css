@@ -32,3 +32,17 @@ h2 {
  font-weight: bold;
  font-size: 1em;
 }
+
+li {
+  background-color: black;
+  color: white;
+  margin-top:5px ;
+  margin-bottom:5px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+li:first-child {
+  background-color: #4538FF;
+}
