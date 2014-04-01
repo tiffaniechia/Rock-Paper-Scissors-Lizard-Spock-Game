@@ -1,6 +1,5 @@
 
 body {
-  /*font-family: Helvetica;*/
   font-family: 'Bangers', cursive;
   text-align: center;
 }
@@ -18,7 +17,7 @@ body {
 
 #results {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1em;
   margin-top: 30px;
 }
 

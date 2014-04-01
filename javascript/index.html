@@ -22,7 +22,7 @@
      
     </div>
 
-    <h4 id="results"></h4>
+    <UL id="results"></UL>
 
     <script src='lib/RockPaperScissors.js'></script>
     <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script> 
@@ -37,7 +37,9 @@
         p1.picks($(this).data('pick'));
         p2.computerrandom();
         game.winner();
-        $('#results').html(game.playmessage());
+        // $('#results').html(game.playmessage());
+        var latestresult = $('<li>' + game.playmessage() + '</li>');
+        $('#results').append(latestresult);
 
       });
 
