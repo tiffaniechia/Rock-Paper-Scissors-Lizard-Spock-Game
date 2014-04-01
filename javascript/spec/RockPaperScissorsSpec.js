@@ -29,7 +29,7 @@ describe("Rock-Paper-Scissors", function() {
         player2.picks('lizard');
         expect(game.winner()).toBe(player1);
         expect(game.message()).toBe('Mario beats Alex')
-
+        expect(game.playmessage()).toBe('rock crushes lizard')
       });
 
       it('should lose to paper', function() {
@@ -58,6 +58,7 @@ describe("Rock-Paper-Scissors", function() {
         player2.picks('rock');
         expect(game.winner()).toBe(player1);
         expect(game.message()).toBe('Mario beats Alex')
+        
       });
 
 
