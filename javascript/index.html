@@ -39,7 +39,7 @@
         game.winner();
         // $('#results').html(game.playmessage());
         var latestresult = $('<li>' + game.playmessage() + '</li>');
-       latestresult.prependTo('#results');
+       latestresult.prependTo('#results').hide().slideDown();
        $('#results li:nth-child(5)').fadeOut(function(){
        $(this).remove();
        });
