@@ -10,7 +10,9 @@ For fun and giggles: I added a default win button known as the 'T' button!
 
 This task was set by [Alex Peattie](https://github.com/alexpeattie).
 
-###The app ia available on Heroku. You can play the game [here](http://rpslst.herokuapp.com/)
+(Week 7)
+
+###The app ia available on Heroku. You can play the game [here](http://rpslst.herokuapp.com/).
 ## 
 
 ###Rock Paper Scissors Lizard Spock in action
@@ -20,7 +22,7 @@ This task was set by [Alex Peattie](https://github.com/alexpeattie).
 ![screenshot](app/public/images/tbutton.png)
 
 
-##Stack:
+##Technologies Used
 - Sinatra
 - Javascript
 - JQuery
